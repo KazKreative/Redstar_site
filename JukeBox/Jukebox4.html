@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jukebox 4</title>
+</head>
+<body>
+	<audio id ="song1" src="Charles_Atlas_-_06_-_Photosphere.mp3"></audio>
+
+	<button onclick="Jukebox.play()">play</button>
+
+<script>
+	document.getElementById('playSong').addEventListener("click", function(){
+		//document.getElementById("song1").play();
+		Jukebox.play();
+	})
+	var Jukebox =  {
+		songs: ["song1, song2"]
+		play: function(){
+		document.getElementById(this.songs)[0].play();
+
+		}
+	};
+	
+
+</script>
+</body>
+</html>

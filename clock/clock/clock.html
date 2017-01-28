@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Clock Assignment</title>
+		<style type="text/css">
+		#hex {
+			color: white;
+			font: 64px/64px Arial;
+			height: 64px;
+			text-align: center;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>This is a clock.</h1>
+		<div id="hex"></div>
+
+		<script type="text/javascript">
+			//lets display the current time
+			var d, h, m, s, color;
+			function displayTime() {
+				d = new Date(); //new data object
+				h = d.getHours();
+				m = d.getMinutes();
+				s = d.getSeconds();
+				
+				//add zero to the left of the numbers if they are single digits
+				if(h <= 09) h = '0' + h;
+				if(m <= 09) m = '0' + m;
+				if(s <= 09) s = '0' + s;
+				
+				color = "#"+h+m+s;
+
+				//set background color
+				document.body.style.background = color;
+				//set time
+				document.getElementById("hex").innerHTML = color;
+				
+				//retrigger the function every second
+				setTimeout(displayTime, 1000);
+			}
+
+			//call the function
+			displayTime();
+		</script>
+	</body>
+</html>

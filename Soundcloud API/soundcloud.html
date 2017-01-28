@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SoundCloud</title>
+</head>
+<body>
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+	<h1>Kazzam SoundCloud</h1>
+	<hr>
+	
+  	<div id="player"></div>
+	<center>
+		<h1 id="state">State: Stopped</h1>
+	    <button id="start" onclick="stateMan.play()"> Play </button>
+	    <button id="stop" onclick="stateMan.stop()"> Stop </button>
+	    <button id="pause" onclick="stateMan.pause()"> Pause </button>
+    </center>
+	<script>
+		SC.initialize({
+		  client_id: "462c24a81279f20509b85eb611d7fc58"
+		});
+		SC.stream('/tracks/228096961').then(function(player){
+		  player.play();
+		});
+
+		$(document).ready(function() {
+  			$('a.connect').click(function(e) {
+    			e.preventDefault();
+    				SC.connect(function();
+        				SC.get("/me", function(me) {
+            				$("username").html(me.username
+        				}});
+    				});
+  				});
+			});
+			$(document).ready(function() {
+				SC.get('/tracks/293', function(track) {
+  				SC.oEmbed(track.permalink_url, document.getElementById('player'));
+  				$('#start').click(function(e) {
+			    e.preventDefault();
+			    sound.start();
+			  });
+			  $('#stop').click(function(e) {
+			    e.preventDefault();
+			    sound.stop();
+			  });
+			  $('#pause').click(function(e) {
+			    e.preventDefault();
+			    sound.stop();
+			  });
+			});
+			});
+
+	</script>
+
+	<style type="text/css">
+    	body {
+        font-family: Helvetica;
+        background-color: black;
+      	}
+      	h1 {
+        text-align: center;
+        color: gray;
+      	}
+      	div {
+        margin: 10px;
+
+    </style>
+
+</body>
+</html>
+
+
+

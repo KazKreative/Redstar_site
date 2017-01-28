@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>DOM Form Manipulation</title>
+        <style>
+            div > h1 {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="example">
+            <div id="main-section">
+                <h1 id="greeting" class="important">Hello World</h1>
+            </div>
+
+            <form action="/process" method="POST">
+                <h1 id="title">JAVASCRIPT ME PLEASE</h1>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+                <input type="submit" value="Submit">
+            </form>
+
+            <button onclick="makeElement()">MAKE AN ELEMENT</button>
+        </div>
+        <script>
+            // A name for us to use later
+            var name = "Ruth Bader Ginsburg";
+
+            // Get ONE element
+            var el = document.getElementById("username");
+            var title = document.getElementById("title");
+            var div = document.getElementById("main-section");
+
+            // Get MANY elements
+            var inputs = document.getElementsByTagName("input");
+
+            // Dynamically change the title
+            title.innerText = "Enter " + name + "'s Information";
+
+            // Get elements using a query selector (just like CSS)
+            var childOfDiv = document.querySelectorAll("div > h1");
+
+            // When the button is clicked, add an element
+            function makeElement() {
+                var newDiv = document.createElement("div");
+                newDiv.innerHTML = "<strong>I'M A DIV YAY</strong>";
+                document.body.appendChild(newDiv);
+            }
+        </script>
+    </body>
+</html>

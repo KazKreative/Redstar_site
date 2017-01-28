@@ -1,0 +1,403 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   'generator',
+1 verbose cli   '-g' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'express', null ]
+7 verbose cache add spec express
+8 silly cache add args [ 'generator', null ]
+9 verbose cache add spec generator
+10 silly cache add parsed spec Result {
+10 silly cache add   raw: 'express',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'express',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: 'latest',
+10 silly cache add   type: 'tag' }
+11 silly addNamed express@latest
+12 verbose addNamed "latest" is being treated as a dist-tag for express
+13 info addNameTag [ 'express', 'latest' ]
+14 silly mapToRegistry name express
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'express',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   name: 'express',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/express
+19 verbose addNameTag registry:https://registry.npmjs.org/express not in flight; fetching
+20 silly cache add parsed spec Result {
+20 silly cache add   raw: 'generator',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'generator',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: 'latest',
+20 silly cache add   type: 'tag' }
+21 silly addNamed generator@latest
+22 verbose addNamed "latest" is being treated as a dist-tag for generator
+23 info addNameTag [ 'generator', 'latest' ]
+24 silly mapToRegistry name generator
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'generator',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   name: 'generator',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/generator
+29 verbose addNameTag registry:https://registry.npmjs.org/generator not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/express
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 11:00:53 AM
+33 verbose request id b2a57b8e4043bad3
+34 http request GET https://registry.npmjs.org/express
+35 verbose request uri https://registry.npmjs.org/generator
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 11:00:53 AM
+38 http request GET https://registry.npmjs.org/generator
+39 http 200 https://registry.npmjs.org/express
+40 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+40 verbose headers   etag: '"C0EPZKIJIB929VOXSJ6962HJ1"',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'content-encoding': 'gzip',
+40 verbose headers   'cache-control': 'max-age=300',
+40 verbose headers   'content-length': '56646',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Fri, 21 Oct 2016 15:00:53 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   age: '239',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-atl6228-ATL',
+40 verbose headers   'x-cache': 'HIT',
+40 verbose headers   'x-cache-hits': '1',
+40 verbose headers   'x-timer': 'S1477062053.378731,VS0,VE0',
+40 verbose headers   vary: 'Accept-Encoding' }
+41 silly get cb [ 200,
+41 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+41 silly get     etag: '"C0EPZKIJIB929VOXSJ6962HJ1"',
+41 silly get     'content-type': 'application/json',
+41 silly get     'content-encoding': 'gzip',
+41 silly get     'cache-control': 'max-age=300',
+41 silly get     'content-length': '56646',
+41 silly get     'accept-ranges': 'bytes',
+41 silly get     date: 'Fri, 21 Oct 2016 15:00:53 GMT',
+41 silly get     via: '1.1 varnish',
+41 silly get     age: '239',
+41 silly get     connection: 'keep-alive',
+41 silly get     'x-served-by': 'cache-atl6228-ATL',
+41 silly get     'x-cache': 'HIT',
+41 silly get     'x-cache-hits': '1',
+41 silly get     'x-timer': 'S1477062053.378731,VS0,VE0',
+41 silly get     vary: 'Accept-Encoding' } ]
+42 verbose get saving express to /Users/apple/.npm/registry.npmjs.org/express/.cache.json
+43 verbose correctMkdir /Users/apple/.npm correctMkdir not in flight; initializing
+44 silly addNameTag next cb for express with tag latest
+45 silly addNamed express@4.14.0
+46 verbose addNamed "4.14.0" is a plain semver version for express
+47 silly mapToRegistry name express
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry data Result {
+50 silly mapToRegistry   raw: 'express',
+50 silly mapToRegistry   scope: null,
+50 silly mapToRegistry   name: 'express',
+50 silly mapToRegistry   rawSpec: '',
+50 silly mapToRegistry   spec: 'latest',
+50 silly mapToRegistry   type: 'tag' }
+51 silly mapToRegistry uri https://registry.npmjs.org/express
+52 verbose addRemoteTarball https://registry.npmjs.org/express/-/express-4.14.0.tgz not in flight; adding
+53 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.14.0.tgz',
+53 verbose addRemoteTarball   'c1ee3f42cdc891fb3dc650a8922d51ec847d0d66' ]
+54 info retry fetch attempt 1 at 11:00:53 AM
+55 info attempt registry request try #1 at 11:00:53 AM
+56 http fetch GET https://registry.npmjs.org/express/-/express-4.14.0.tgz
+57 http fetch 200 https://registry.npmjs.org/express/-/express-4.14.0.tgz
+58 silly fetchAndShaCheck shasum c1ee3f42cdc891fb3dc650a8922d51ec847d0d66
+59 verbose addTmpTarball /var/folders/7m/36b3w1jn2k5gd9rxlmsqh4v80000gn/T/npm-21063-88c96da2/registry.npmjs.org/express/-/express-4.14.0.tgz not in flight; adding
+60 verbose addTmpTarball already have metadata; skipping unpack for express@4.14.0
+61 verbose correctMkdir /Users/apple/.npm correctMkdir not in flight; initializing
+62 silly cache afterAdd express@4.14.0
+63 verbose afterAdd /Users/apple/.npm/express/4.14.0/package/package.json not in flight; writing
+64 verbose correctMkdir /Users/apple/.npm correctMkdir not in flight; initializing
+65 verbose afterAdd /Users/apple/.npm/express/4.14.0/package/package.json written
+66 http 200 https://registry.npmjs.org/generator
+67 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+67 verbose headers   etag: '"8QP1LOV8FBXQ4ESJJM1W5YXU7"',
+67 verbose headers   'content-type': 'application/json',
+67 verbose headers   'content-encoding': 'gzip',
+67 verbose headers   'cache-control': 'max-age=300',
+67 verbose headers   'content-length': '3422',
+67 verbose headers   'accept-ranges': 'bytes',
+67 verbose headers   date: 'Fri, 21 Oct 2016 15:00:53 GMT',
+67 verbose headers   via: '1.1 varnish',
+67 verbose headers   age: '0',
+67 verbose headers   connection: 'keep-alive',
+67 verbose headers   'x-served-by': 'cache-atl6227-ATL',
+67 verbose headers   'x-cache': 'MISS',
+67 verbose headers   'x-cache-hits': '0',
+67 verbose headers   'x-timer': 'S1477062053.377896,VS0,VE249',
+67 verbose headers   vary: 'Accept-Encoding' }
+68 silly get cb [ 200,
+68 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+68 silly get     etag: '"8QP1LOV8FBXQ4ESJJM1W5YXU7"',
+68 silly get     'content-type': 'application/json',
+68 silly get     'content-encoding': 'gzip',
+68 silly get     'cache-control': 'max-age=300',
+68 silly get     'content-length': '3422',
+68 silly get     'accept-ranges': 'bytes',
+68 silly get     date: 'Fri, 21 Oct 2016 15:00:53 GMT',
+68 silly get     via: '1.1 varnish',
+68 silly get     age: '0',
+68 silly get     connection: 'keep-alive',
+68 silly get     'x-served-by': 'cache-atl6227-ATL',
+68 silly get     'x-cache': 'MISS',
+68 silly get     'x-cache-hits': '0',
+68 silly get     'x-timer': 'S1477062053.377896,VS0,VE249',
+68 silly get     vary: 'Accept-Encoding' } ]
+69 verbose get saving generator to /Users/apple/.npm/registry.npmjs.org/generator/.cache.json
+70 verbose correctMkdir /Users/apple/.npm correctMkdir not in flight; initializing
+71 silly addNameTag next cb for generator with tag latest
+72 silly addNamed generator@1.0.1
+73 verbose addNamed "1.0.1" is a plain semver version for generator
+74 silly mapToRegistry name generator
+75 silly mapToRegistry using default registry
+76 silly mapToRegistry registry https://registry.npmjs.org/
+77 silly mapToRegistry data Result {
+77 silly mapToRegistry   raw: 'generator',
+77 silly mapToRegistry   scope: null,
+77 silly mapToRegistry   name: 'generator',
+77 silly mapToRegistry   rawSpec: '',
+77 silly mapToRegistry   spec: 'latest',
+77 silly mapToRegistry   type: 'tag' }
+78 silly mapToRegistry uri https://registry.npmjs.org/generator
+79 verbose addRemoteTarball https://registry.npmjs.org/generator/-/generator-1.0.1.tgz not in flight; adding
+80 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator/-/generator-1.0.1.tgz',
+80 verbose addRemoteTarball   '01fe5f576dab7a1ed51f5e19ef4362a2fe079567' ]
+81 info retry fetch attempt 1 at 11:00:53 AM
+82 info attempt registry request try #1 at 11:00:53 AM
+83 http fetch GET https://registry.npmjs.org/generator/-/generator-1.0.1.tgz
+84 http fetch 200 https://registry.npmjs.org/generator/-/generator-1.0.1.tgz
+85 silly fetchAndShaCheck shasum 01fe5f576dab7a1ed51f5e19ef4362a2fe079567
+86 verbose addTmpTarball /var/folders/7m/36b3w1jn2k5gd9rxlmsqh4v80000gn/T/npm-21063-88c96da2/registry.npmjs.org/generator/-/generator-1.0.1.tgz not in flight; adding
+87 verbose addTmpTarball already have metadata; skipping unpack for generator@1.0.1
+88 verbose correctMkdir /Users/apple/.npm correctMkdir not in flight; initializing
+89 silly cache afterAdd generator@1.0.1
+90 verbose afterAdd /Users/apple/.npm/generator/1.0.1/package/package.json not in flight; writing
+91 verbose correctMkdir /Users/apple/.npm correctMkdir not in flight; initializing
+92 verbose afterAdd /Users/apple/.npm/generator/1.0.1/package/package.json written
+93 silly install resolved [ { name: 'express',
+93 silly install resolved     description: 'Fast, unopinionated, minimalist web framework',
+93 silly install resolved     version: '4.14.0',
+93 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+93 silly install resolved     contributors:
+93 silly install resolved      [ [Object],
+93 silly install resolved        [Object],
+93 silly install resolved        [Object],
+93 silly install resolved        [Object],
+93 silly install resolved        [Object],
+93 silly install resolved        [Object],
+93 silly install resolved        [Object] ],
+93 silly install resolved     license: 'MIT',
+93 silly install resolved     repository: { type: 'git', url: 'https://github.com/expressjs/express' },
+93 silly install resolved     homepage: 'http://expressjs.com/',
+93 silly install resolved     keywords:
+93 silly install resolved      [ 'express',
+93 silly install resolved        'framework',
+93 silly install resolved        'sinatra',
+93 silly install resolved        'web',
+93 silly install resolved        'rest',
+93 silly install resolved        'restful',
+93 silly install resolved        'router',
+93 silly install resolved        'app',
+93 silly install resolved        'api' ],
+93 silly install resolved     dependencies:
+93 silly install resolved      { accepts: '~1.3.3',
+93 silly install resolved        'array-flatten': '1.1.1',
+93 silly install resolved        'content-disposition': '0.5.1',
+93 silly install resolved        'content-type': '~1.0.2',
+93 silly install resolved        cookie: '0.3.1',
+93 silly install resolved        'cookie-signature': '1.0.6',
+93 silly install resolved        debug: '~2.2.0',
+93 silly install resolved        depd: '~1.1.0',
+93 silly install resolved        encodeurl: '~1.0.1',
+93 silly install resolved        'escape-html': '~1.0.3',
+93 silly install resolved        etag: '~1.7.0',
+93 silly install resolved        finalhandler: '0.5.0',
+93 silly install resolved        fresh: '0.3.0',
+93 silly install resolved        'merge-descriptors': '1.0.1',
+93 silly install resolved        methods: '~1.1.2',
+93 silly install resolved        'on-finished': '~2.3.0',
+93 silly install resolved        parseurl: '~1.3.1',
+93 silly install resolved        'path-to-regexp': '0.1.7',
+93 silly install resolved        'proxy-addr': '~1.1.2',
+93 silly install resolved        qs: '6.2.0',
+93 silly install resolved        'range-parser': '~1.2.0',
+93 silly install resolved        send: '0.14.1',
+93 silly install resolved        'serve-static': '~1.11.1',
+93 silly install resolved        'type-is': '~1.6.13',
+93 silly install resolved        'utils-merge': '1.0.0',
+93 silly install resolved        vary: '~1.1.0' },
+93 silly install resolved     devDependencies:
+93 silly install resolved      { after: '0.8.1',
+93 silly install resolved        'body-parser': '~1.15.1',
+93 silly install resolved        'cookie-parser': '~1.4.3',
+93 silly install resolved        ejs: '2.4.2',
+93 silly install resolved        istanbul: '0.4.3',
+93 silly install resolved        marked: '0.3.5',
+93 silly install resolved        'method-override': '~2.3.6',
+93 silly install resolved        mocha: '2.5.3',
+93 silly install resolved        morgan: '~1.7.0',
+93 silly install resolved        should: '9.0.2',
+93 silly install resolved        supertest: '1.2.0',
+93 silly install resolved        'connect-redis': '~2.4.1',
+93 silly install resolved        'cookie-session': '~1.2.0',
+93 silly install resolved        'express-session': '~1.13.0',
+93 silly install resolved        jade: '~1.11.0',
+93 silly install resolved        multiparty: '~4.1.2',
+93 silly install resolved        vhost: '~3.0.2' },
+93 silly install resolved     engines: { node: '>= 0.10.0' },
+93 silly install resolved     files: [ 'LICENSE', 'History.md', 'Readme.md', 'index.js', 'lib/' ],
+93 silly install resolved     scripts:
+93 silly install resolved      { test: 'mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/',
+93 silly install resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/',
+93 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/',
+93 silly install resolved        'test-tap': 'mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/' },
+93 silly install resolved     gitHead: '9375a9afa9d7baa814b454c7a6818a7471aaef00',
+93 silly install resolved     bugs: { url: 'https://github.com/expressjs/express/issues' },
+93 silly install resolved     _id: 'express@4.14.0',
+93 silly install resolved     _shasum: 'c1ee3f42cdc891fb3dc650a8922d51ec847d0d66',
+93 silly install resolved     _from: 'express@latest',
+93 silly install resolved     _npmVersion: '1.4.28',
+93 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+93 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+93 silly install resolved     dist:
+93 silly install resolved      { shasum: 'c1ee3f42cdc891fb3dc650a8922d51ec847d0d66',
+93 silly install resolved        tarball: 'https://registry.npmjs.org/express/-/express-4.14.0.tgz' },
+93 silly install resolved     _npmOperationalInternal:
+93 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+93 silly install resolved        tmp: 'tmp/express-4.14.0.tgz_1466095407850_0.17484632693231106' },
+93 silly install resolved     directories: {},
+93 silly install resolved     _resolved: 'https://registry.npmjs.org/express/-/express-4.14.0.tgz' },
+93 silly install resolved   { author:
+93 silly install resolved      { name: 'Andrew Sliwinski',
+93 silly install resolved        email: 'andrewsliwinski@acm.org',
+93 silly install resolved        url: 'http://andrewsliwinski.com' },
+93 silly install resolved     name: 'generator',
+93 silly install resolved     description: 'Project bootstrapping with an emphasis on simplicity.',
+93 silly install resolved     keywords: [ 'template', 'scaffold', 'scaffolding', 'bootstrap', 'utility' ],
+93 silly install resolved     version: '1.0.1',
+93 silly install resolved     homepage: 'https://github.com/thisandagain/generator',
+93 silly install resolved     license: 'MIT',
+93 silly install resolved     repository:
+93 silly install resolved      { type: 'git',
+93 silly install resolved        url: 'https://github.com/thisandagain/generator.git' },
+93 silly install resolved     preferGlobal: true,
+93 silly install resolved     main: './lib/index.js',
+93 silly install resolved     bin: { generator: './bin/index.js', generate: './bin/index.js' },
+93 silly install resolved     scripts: { test: 'make test' },
+93 silly install resolved     dependencies:
+93 silly install resolved      { async: '~0.2.9',
+93 silly install resolved        colors: '~0.6.2',
+93 silly install resolved        findit: '~0.1.2',
+93 silly install resolved        'fs-extra': '~0.6.3',
+93 silly install resolved        prompt: '~0.2.11',
+93 silly install resolved        optimist: '~0.6.0',
+93 silly install resolved        replace: '~0.2.7' },
+93 silly install resolved     devDependencies: { 'hint-hint': '~0.3.0', tap: '~0.4.4' },
+93 silly install resolved     optionalDependencies: {},
+93 silly install resolved     engines: { node: '>=0.8' },
+93 silly install resolved     readme: '## Generator [![Build Status](https://secure.travis-ci.org/thisandagain/generator.png)](http://travis-ci.org/thisandagain/generator)\n#### Language agnostic project bootstrapping with an emphasis on simplicity.\n\n![Screenshot](https://raw.github.com/thisandagain/generator/master/interface.png)\n\n### Installation\n```bash\n[sudo] npm install -g generator\n```\n\nOnce installed, you should load the default templates:\n```bash\ngenerate --setup\n```\n\n### Usage\nIn order to bootstrap a project using one of the default templates you simply run `generate` and specifiy a template and project name. For example, let\'s create a new Node.js module called `kittycannon`:\n```bash\ngenerate --template npm --name kittycannon\n```\n\n---\n\n### Default Templates\nGenerator comes with a few templates to get you started. While they are usable as-is, the whole point of Generator is make the creation of custom templates as simple as possible.\n\n- `npm` [NPM](https://npmjs.org/) module template\n- `arduino` [Arduino](http://www.arduino.cc/) project template\n\n### How Templates Work\nTemplates are simply directories with any combination of files and sub-directories found within them. To create a new template simply create a new directory within your `~/.generator` path or copy one of the default templates and modify it. Upon use, Generator will walk the template looking for any instances of `__somelowercasevariable__` and prompt for a value. For example, a template including this:\n\n```javascript\n/**\n * __description__\n *\n * @package __name__\n * @author __author__ <__email__>\n */\n```\n\nWill prompt:\n```bash\ndescription: Rainbow catsplosion.\nauthor: Nyan Cat\nemail: kitty@meow.com\n```\n\nWhich will generate:\n```javascript\n/**\n * Rainbow catsplosion.\n *\n * @package myAwesomeProject\n * @author Nyan Cat <kitty@meow.com>\n */\n```\n\n---\n\n### Post Processing\nBy default, Generator will look for a `makefile` and (if found) will run `make generator` after all other template processing has been completed. This is particularly handy for dealing with template dependencies that may change over time (like git repositories or even [NPM](https://npmjs.org/) modules). For example:\n\n```bash\ngenerator:\n    npm install\n\n.PHONY: generator\n```\n\nOr... heck, let\'s go crazy nuts and automate setting up our git repo:\n\n```bash\ngenerator:\n    git init\n    git remote add origin https://github.com/__github__/__name__\n    npm install\n\n.PHONY: generator\n```\n\n---\n\n### Testing\n```bash\nnpm test\n```\n\n### Notes\n- C, C++, and PHP often use the `__SOMETHING__` pattern for [macros](http://gcc.gnu.org/onlinedocs/gcc-3.1/cpp/Standard-Predefined-Macros.html). For this reason, Generator will ignore any variable instances that are specified in caps. This works fine for C and C++ users, but given that such macros in PHP are case insensitive, PHP users should keep this limitation in mind while designing templates.\n- "Good coders code. Great reuse." quote shamelessly stolen from [Peteris Krumins\' blog](http://www.catonmat.net/) (which you should read).\n',
+93 silly install resolved     readmeFilename: 'README.md',
+93 silly install resolved     _id: 'generator@1.0.1',
+93 silly install resolved     dist:
+93 silly install resolved      { shasum: '01fe5f576dab7a1ed51f5e19ef4362a2fe079567',
+93 silly install resolved        tarball: 'https://registry.npmjs.org/generator/-/generator-1.0.1.tgz' },
+93 silly install resolved     _from: 'generator@latest',
+93 silly install resolved     _npmVersion: '1.2.11',
+93 silly install resolved     _npmUser: { name: 'diy', email: 'help@diy.org' },
+93 silly install resolved     maintainers: [ [Object] ],
+93 silly install resolved     directories: {},
+93 silly install resolved     _shasum: '01fe5f576dab7a1ed51f5e19ef4362a2fe079567',
+93 silly install resolved     _resolved: 'https://registry.npmjs.org/generator/-/generator-1.0.1.tgz' } ]
+94 info install express@4.14.0 into /usr/local/lib
+95 info install generator@1.0.1 into /usr/local/lib
+96 info installOne express@4.14.0
+97 verbose installOne of express to /usr/local/lib not in flight; installing
+98 verbose correctMkdir /Users/apple/.npm/_locks correctMkdir not in flight; initializing
+99 info installOne generator@1.0.1
+100 verbose installOne of generator to /usr/local/lib not in flight; installing
+101 verbose correctMkdir /Users/apple/.npm/_locks correctMkdir already in flight; waiting
+102 verbose lock using /Users/apple/.npm/_locks/express-59b5b7164c5e2658.lock for /usr/local/lib/node_modules/express
+103 verbose lock using /Users/apple/.npm/_locks/generator-d46c632191a7e769.lock for /usr/local/lib/node_modules/generator
+104 silly install write writing express 4.14.0 to /usr/local/lib/node_modules/express
+105 silly install write writing generator 1.0.1 to /usr/local/lib/node_modules/generator
+106 verbose unbuild lib/node_modules/express
+107 verbose unbuild lib/node_modules/generator
+108 silly gentlyRm /usr/local/lib/node_modules/express is being purged from base /usr/local
+109 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/express
+110 verbose tar unpack /Users/apple/.npm/express/4.14.0/package.tgz
+111 verbose tar unpacking to /usr/local/lib/node_modules/express
+112 silly gentlyRm /usr/local/lib/node_modules/express is being purged
+113 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/express
+114 silly gentlyRm /usr/local/lib/node_modules/generator is being purged from base /usr/local
+115 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator
+116 silly gunzTarPerm modes [ '755', '644' ]
+117 verbose tar unpack /Users/apple/.npm/generator/1.0.1/package.tgz
+118 verbose tar unpacking to /usr/local/lib/node_modules/generator
+119 silly gentlyRm /usr/local/lib/node_modules/generator is being purged
+120 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator
+121 silly gunzTarPerm modes [ '755', '644' ]
+122 error tar.unpack untar error /Users/apple/.npm/express/4.14.0/package.tgz
+123 error tar.unpack untar error /Users/apple/.npm/generator/1.0.1/package.tgz
+124 verbose unlock done using /Users/apple/.npm/_locks/express-59b5b7164c5e2658.lock for /usr/local/lib/node_modules/express
+125 verbose unlock done using /Users/apple/.npm/_locks/generator-d46c632191a7e769.lock for /usr/local/lib/node_modules/generator
+126 verbose fstream_path /usr/local/lib/node_modules/express
+127 verbose fstream_type Directory
+128 verbose fstream_class DirWriter
+129 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/express'
+129 verbose stack     at Error (native)
+130 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+130 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+130 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+131 verbose cwd /Users/apple/src
+132 error Darwin 15.6.0
+133 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "express" "generator" "-g"
+134 error node v4.6.0
+135 error npm  v2.15.9
+136 error path /usr/local/lib/node_modules/express
+137 error code EACCES
+138 error errno -13
+139 error syscall mkdir
+140 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/express'
+140 error     at Error (native)
+140 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/express']
+140 error   errno: -13,
+140 error   code: 'EACCES',
+140 error   syscall: 'mkdir',
+140 error   path: '/usr/local/lib/node_modules/express',
+140 error   fstream_type: 'Directory',
+140 error   fstream_path: '/usr/local/lib/node_modules/express',
+140 error   fstream_class: 'DirWriter',
+140 error   fstream_stack:
+140 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+140 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+140 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+141 error Please try running this command again as root/Administrator.
+142 verbose exit [ -13, true ]
+143 verbose unbuild lib/node_modules/express
+144 silly gentlyRm /usr/local/lib/node_modules/express is being purged from base /usr/local
+145 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/express
+146 verbose unbuild lib/node_modules/generator
+147 silly gentlyRm /usr/local/lib/node_modules/generator is being purged from base /usr/local
+148 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator

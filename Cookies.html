@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookie Time</title>
+	<script src="cookies (1).js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+</head>
+<body>
+	<h1 Id ="wrapper">Please Enter Name</h1>
+	<input type="text" id="input1" />
+	<button onclick="myJsFunction()"></button>
+	
+<script>
+	function myJsFunction(){
+	    var text = document.getElementById("input1").value;
+	    console.log(text)
+	    Cookies.set("input1", text)
+	 }
+	 function recogniseUser (){
+	 	var input1 = Cookies.get("input1")
+	 	console.log(input1)
+	 	document.getElementById("wrapper").innerHTML = "Welcome Back " + input1;
+	 }
+	 recogniseUser();
+	}
+	
+	
+</script>
+<style>
+	#wrapper {
+		text-align: center;
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	body {
+		background: gray;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    }
+ 
+	
+
+</style>
+	
+
+
+
+</body>	
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>functions</title>
+</head>
+<body>
+<script type="text/javascript">
+	function doorPrize(pickADoor){
+		console.log("You Picked Door " + pickADoor);
+
+		if(pickADoor == 1){
+			console.log("You Won a Cookie")
+		} else if (pickADoor ==2){
+			console.log("You won more cookies")
+		}	else if (pickADoor ==3){
+			console.log("you won the entire Jar!")
+		}
+			else 
+				{
+			console.log ("Pick 1,2 or 3")
+		}
+	}
+
+	var choice = prompt("Pick a door, 1 2 or 3");
+ 
+	doorPrize(choice);
+	
+
+</script>
+
+</body>
+</html>

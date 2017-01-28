@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sinatra Form</title>
+</head>
+<body>
+
+	<h1>Welcome to Sinatra!</h1>
+	<form action="/contact" method="POST">
+		<input type="text" name="name" placeholder="enter name"/>
+		<input type="text" name="stardate" placeholder="stardate"/>
+		<input type="text" name="email" placeholder="email"/>
+		<input type="text" name="gender" placeholder="gender"/>
+		<input type="submit" value="PRESS HERE"/>
+	</form>
+
+<h1><p><%= @msg %></p></h1>
+
+<p><%= @pst %></p>
+
+</body>
+</html>

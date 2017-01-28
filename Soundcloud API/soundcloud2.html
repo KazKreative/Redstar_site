@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SoundCloud</title>
+  <script type="text/javascript" src="scripts/soundcloud.player.api.js"></script>
+<script type="text/javascript">
+   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+     player.api_play();
+   });
+</script>
+</head>
+<body>
+  <h1>SoundCloud Kazzam &mdash; JavaScript SDK</h1>
+  
+  <button id="getList">Get List of Tracks</button>
+  <button id="embedTrack">Embed Track</button>
+  <div id="player"></div>
+  
+  <ul></ul>
+  <h4>This popup should automatically close in a few seconds</h4>
+
+  <script>
+      document.onload = function () {
+        window.opener.setTimeout(window.opener.SC.connectCallback, 1);
+      }
+            $(document).ready(function() {
+        // initialization
+        SC.initialize({
+          client_id:"462c24a81279f20509b85eb611d7fc58"
+        });
+
+        // Getting tracks
+        $("#getList").click(function() {
+          SC.get("/tracks", function(res) {
+            for (var i = 0; i < res.length; i++) {
+        $("ul").append("<li>" + res[i].title + "</li>")
+      }
+    });
+  });
+});
+        SC.oEmbed('https://soundcloud.com/username/complete-url-to-the-track', 
+          {maxheight: 200, auto_play: false}, function(res) {
+          $("#player").html(res.html);
+        });
+
+        SC.connect(function () {
+        SC.get("/me", function (response) {
+          console.log("Welcome" + response.username);
+        });
+      }); 
+
+  </script>
+  <style type="text/css">
+    body {
+        font-family: Helvetica;
+      }
+      h1 {
+        text-align: center;
+      }
+      div {
+        margin: 10px;
+}
+  </style>
+  
+    <h1>Sound Controller</h1>
+    <hr>
+    <center>
+      <h1 id="state">State: Stopped</h1>
+      <button id="play" onclick="stateMan.play()"> Play </button>
+      <button id="stop" onclick="stateMan.stop()"> Stop </button>
+      <button id="pause" onclick="stateMan.pause()"> Pause </button>
+      <br>
+      
+      <h1 id="volume">Current Volume: 50</h1>
+      <h2 id="mState"></h2>
+      <button id="volUp" onclick="volMan.volUp()"> Volume Up </button>
+      <button id="volDown" onclick="volMan.volDown()"> Volume Down </button>
+      <button id="mute" onclick="volMan.mute()"> mute </button>
+      <button id="unmute" onclick="volMan.unmute()"> unmute </button>
+    </center>
+
+</body>
+</html>
+
+
+
+
+

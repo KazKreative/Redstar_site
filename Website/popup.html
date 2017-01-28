@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</html>
+    <title>Popup Boxes</title>
+
+    <script type="text/javascript">
+          function delay_toggle_visibility(delay) {
+            var timeoutID = window.setTimeout(toggle_visibility, delay)
+          }
+
+          function toggle_visibility() {
+             var e = document.getElementById('popupBoxOnePosition');
+             if(e.style.display == 'block')
+                e.style.display = 'none';
+             else
+                e.style.display = 'block';
+          }
+     
+    </script>
+
+    <style type="text/css">
+      html {
+      height: 100%;
+      box-sizing: border-box;
+      }
+
+      #popupBoxOnePosition{
+        top: 250px; 
+        left: 300px; 
+        position: fixed; 
+        width: 50%; height: 50%;
+        background-color: white; 
+        text-align: center;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        border: 4px solid black;
+      }
+      body {
+       
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background-color: #203731;
+    }
+        h1 {
+        color: dimgray;
+        font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+        box-sizing: inherit;
+        text-align: center;
+       }
+        h3 {
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #ffb612;
+       
+        border: 1px solid white;
+        }
+        
+     
+        p {
+          font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+          width: 400px;
+          color: dimgray;
+         
+
+        #wrapper {
+
+        }
+
+        }
+        #footerContent{
+          color: #FEBA01;
+          text-align: center;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height:80px;
+          margin: 0 auto;
+          background-color: white;
+            }
+
+      
+    </style>
+
+  </head>
+
+  <body>
+  <header><h1>THIS IS PACKERS FOOTBALL</h1></header>
+
+  <div class="demopage">
+      <center>
+      <h3><b>A Brief History.</b></h3>
+      <br>
+      </center>
+      
+        <p>The Green Bay Packers, arguably the most storied franchise in the National Football League, were organized on Aug. 11, 1919, in the dingy second-floor editorial rooms of the old Green Bay Press-Gazette building, located on Cherry Street in downtown Green Bay.</p>
+
+        <p>Never imagining what might become of the semipro football team being formed that day, nobody documented who was there or how many were on hand. There had been no announcement of the meeting beforehand, and the Press-Gazette provided no details.</p>
+
+        <p>Whether a full complement of players attended or if it was simply a small gathering of the team’s prime movers was never made clear. Nor was it spelled out if much of the preliminary work had been completed beforehand or if the meeting itself triggered .</p>
+
+        <p>On Aug. 27, 1921, the year-old American Professional Football Association awarded a franchise to the Acme Packers of Green Bay during a league meeting in Chicago. The Acme Packing Co., based in Chicago, had purchased Indian Packing eight months earlier. Less than a year later, the APFA would change its name to the National Football League. The rest as they say, is history!</p>
+
+  
+  </div>
+  <div class="modal">
+
+    <div id="popupBoxOnePosition">
+      <div class="popupBoxWrapper">
+        <div class="popupBoxContent">
+          <h3>Packers Good Luck Mantra!</h3>
+          
+          <p>Fight, you Packers, Fight, and bring the bacon home to 
+                Ooooooolllllld Greeeeeeeeeen Baaaaaaaaaaaaaay.</p>
+          <p>Click <a href="javascript:void(0)" onclick="toggle_visibility();">here</a> to close.</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div id="wrapper">
+
+      <b><p>Click <a href="javascript:void(0)" onclick="delay_toggle_visibility(3000);">here</a> for good Packer Karma!</p></b>
+      
+    </div>
+    <footer>
+    <div id = "footerContent">© 2016 NYCDA Student</div>
+  </footer>
+  </body>
+  
+</html>

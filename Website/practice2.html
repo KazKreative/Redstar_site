@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="practice2.css">
+</head>
+<body>
+	<div id="overlay" class="cover blur-in">
+  
+<div class="row pop-up">
+  <div class="box small-6 large-centered">
+    <a href="#" class="close-button">&#10006;</a>
+    <h3>lorem ipsum</h3>
+    <p>Integer non odio id ante rutrum dictum. Nam ac dapibus felis, at pharetra sapien. </p>
+    <p>Maecenas lacus nisi, pellentesque a congue vel, rhoncus sit amet lacus. Sed mattis ultrices risus in tincidunt.</p>
+    <a href="#" class="button">Learn More</a>
+  </div>
+</div>
+<script type="text/javascript">
+	$(function() {
+  $('.pop-up').hide();
+  $('.pop-up').fadeIn(1000);
+  
+      $('.close-button').click(function (e) { 
+
+      $('.pop-up').fadeOut(700);
+      $('#overlay').removeClass('blur-in');
+      $('#overlay').addClass('blur-out');
+      e.stopPropagation();
+        
+    });
+</script>
+
+</body>
+</html>

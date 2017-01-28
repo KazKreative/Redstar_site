@@ -1,0 +1,72 @@
+	html {
+  		height: 100%;
+  		box-sizing: border-box;
+}
+   h1 {
+        color: dimgray;
+        font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    }
+    h3 {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #fff;
+        background-color: #FF704D;
+    }
+	
+        box-sizing: inherit;
+        }
+    	body {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+      	padding-bottom: 6rem;
+      	min-height: 100%;
+      	font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .demopage {
+          margin: 0 auto;
+          padding-top: 180px;
+          max-width: 640px;
+          width: 94%;
+        }
+    body{
+		background-color: #203731;
+		}
+	header {
+		position: absolute;
+		right:0;
+        top:0;
+		left:0;
+		padding: 1.5rem;
+		text-align: left;
+		background-color: white;
+		z-index: 10;
+		border-bottom: solid #ffb612;
+		}
+	footer{
+		position: absolute;
+  		right: 0;
+  		bottom: 0;
+  		left: 0;
+ 		 padding: 1rem; 
+ 		 background-color: white;
+  		text-align: center;
+  		border-top: solid #ffb612;
+		}
+ #wrapper {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+ }
+
+
+
+
+ 
+
+
+
+
+
+/*https://www.youtube.com/watch?v=96SaQyJXj98
+

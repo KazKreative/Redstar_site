@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Homework</title>
+</head>
+<body>
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+    <body><center>
+        <h1>Kaz Login Page</h1>
+        <h3>Username hint is:username</h3>
+        <form name="login">
+            Username<input type="text" name="userid"/>
+            Password<input type="password" name="pswrd"/>
+            		<input type="button" onclick="check(this.form)" value="Login"/>
+            		<input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { 
+                if(form.userid.value == "username" && form.pswrd.value == "12345678") {
+                    window.open('target.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+                return false;
+            }
+        </script>
+     	</center>
+    </body>
+</html>
+
+</body>
+</html>

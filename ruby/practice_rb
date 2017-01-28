@@ -1,0 +1,7 @@
+#loops
+
+for	current_number in i..50 do
+	p "this is number #{current_number}"
+
+end
+
